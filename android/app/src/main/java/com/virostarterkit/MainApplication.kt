@@ -25,6 +25,7 @@ class MainApplication : Application(), ReactApplication {
               // https://viro-community.readme.io/docs/installation-instructions#5-now-add-the-viro-package-to-your-mainapplication
               add(ReactViroPackage(ReactViroPackage.ViroPlatform.GVR))
               add(ReactViroPackage(ReactViroPackage.ViroPlatform.AR))
+              add(ReactViroPackage(ReactViroPackage.ViroPlatform.valueOf("AR")))
             }
 
         override fun getJSMainModuleName(): String = "index"
